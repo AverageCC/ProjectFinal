@@ -1,3 +1,12 @@
+.uniform-header {
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    margin-top: 50px;
+}
+
 body {
     font-family: "Lato", sans-serif;
     background-color: rgba(0, 255, 255, 0.3);
@@ -6,7 +15,7 @@ body {
     flex-direction: column; 
     height: 100vh; 
     margin: 0; 
-    padding: 0;
+    padding: 0 20px;
     box-sizing: border-box;
     position: relative; 
     justify-content: center;
@@ -34,6 +43,24 @@ h2 {
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 button {
@@ -78,12 +105,12 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 125px;
-    height: 100vh;
+    padding-top: 100px;
+
 }
 
 #heheheha {
-    max-width: 100%;
+    max-width: 60%;
 }
 
 #validationForm label, /* This is the label design for the input box and text that says what it is for. The "," represents what is equivocally an and statement. This links to our form that we created */
@@ -118,6 +145,11 @@ button:active {
     transform: translateY(4px); /* This moves the button down 4 pixels when clicked creating the press down effect */
 }
 
+.inputContainer {
+    min-height: 100vh;
+    margin-bottom: -550px;
+}
+
 .Objectives {
     display: flex;
     justify-content: center;
@@ -129,6 +161,18 @@ button:active {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black; /* This sets the background color of the footer to green */
+    color: white; /* This sets the color of the text */
+    padding: 10px; /* This sets the padding of the footer */
+    position: fixed; 
+    bottom: 0; /* This sets the bottom of the footer to 0 */
+    width: 100%; /* This sets the width of the footer to 100% */
+    text-align: right; /* This sets the text alignment to the right */
 }
 
 .sidenav {

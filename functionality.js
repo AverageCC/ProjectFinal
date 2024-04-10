@@ -122,4 +122,4 @@ function validateForm(event) { // Function to validate the form input
     }
 }
 
-document.getElementById('validationForm').addEventListener('submit', validateForm); // Event listener to the form to check if it's valid when it's submitted
+document.getElementById('validationForm').addEventListener('submit', validateForm); // Event listener to the form to check if it's valid when it's submitted -bug fix needed
