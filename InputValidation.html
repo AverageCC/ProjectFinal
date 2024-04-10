@@ -17,6 +17,18 @@
     <h1>Intro to Programming (CSC102)</h1>
     <p id="subtitle">The course that brings knowledge to beginners</p>
 
+    <h2>Validate Your Info</h2> <!-- This adds a header to the webpage -->
+    <form id="validationForm"> <!-- This creates a form with the id of validationForm that is referenced to as #validationform in main.css and allows us call it using .innerhtml in our Validator.js -->
+        <label for="firstName">First Name:</label> <!-- This creates a label for the input field of firstName -->
+        <input type="text" id="firstName" name="firstName"> <!-- This creates a textbox for the user to input their first name -->
+        <label for="lastName">Last Name:</label> <!-- This creates a label for the input field of lastName -->
+        <input type="text" id="lastName" name="lastName"> <!-- This creates a textbox for the user to input their last name -->
+        <label for="zipCode">Zip Code:</label> <!-- This creates a label for the input field of zipCode -->
+        <input type="text" id="zipCode" name="zipCode"> <!-- This creates a textbox for the user to input their zip code -->
+        <input class="Submit-button" type="submit" value="Submit"> <!-- This creates a submit button for the user to submit their information and uses class="Submit-button" this way we can separate it in our main.css file for reference and isolate the design -->
+    <p id="result"></p> <!-- This is the result that is referenced to as #result in main.css and allows us call it using .innerhtml in our Validator.js -->
+    <p id="secretMessage" style="display: none;">Welcome to our secret program :D</p> <!-- This is the secret message that is referenced to as #secretMessage in main.css and allows us call it using .innerhtml in our Validator.js -->
+
     <script src="functionality.js"></script>
 </body>
 </html>

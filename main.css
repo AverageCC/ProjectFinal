@@ -6,10 +6,22 @@ body {
     flex-direction: column; 
     height: 100vh; 
     margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
     position: relative; 
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    padding-top: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,8 +36,99 @@ h1 {
     font-size: 20px;
 }
 
+button {
+    background-color: #4CAF50; /* This sets the background color of the button to green */
+    border: none; /* This defines the border of the button */
+    color: white; /* This sets the color of the text */
+    padding: 15px 64px; /* This defines the area around my text for the button. This determines H x W on the button */
+    border-radius: 60px; /* This sets the border to be rounded. The higher the pixels, the more curved the corners become */
+    text-decoration: none; /* This removes the underline from the text */
+    font-size: 16px; /* This sets the font size */
+    cursor: pointer; /* This sets the cursor to a pointer */
+    margin-top: 20px; /* This sets the margin of the button*/
+    box-shadow: 0 5px #999; /* This creates a shadow behind our button */
+}
+
+button:hover {
+    background-color: #45a049; /* This sets the background color of the button to a darker green when hovered over */
+}
+
+button:active {
+    background-color: #3e8e41; /* This sets the background color of the button to a darker green when clicked */
+    box-shadow: 0 2px #666; /* This creates a shadow behind our button when clicked */
+    transform: translateY(4px); /* This moves the button down 4 pixels when clicked */
+}
+
+#palindrome {
+    width: 300px; 
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
 #img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
     padding: 10px;
+}
+
+#imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 125px;
+    height: 100vh;
+}
+
+#heheheha {
+    max-width: 100%;
+}
+
+#validationForm label, /* This is the label design for the input box and text that says what it is for. The "," represents what is equivocally an and statement. This links to our form that we created */
+#validationForm input {
+    display: flex; 
+    flex-direction: column; /* This sets the direction of the display to column so that the label and input are on top of each other */
+    margin-bottom: 10px; /* This sets the margin from the bottom */
+    border-radius: 20px; /* This sets the border to be rounded. The higher the pixels, the more curved the corners become */
+    padding: 5px 5px; /* This sets the padding of the input box. The pixels seem small, but are larger than you think increasing it anymore will make it too big for our web page */
+}
+
+#validationForm input[class="Submit-button"] { /* This overwrites #validationForm for the specific input classified as "Submit-button" so that it can have it's own unique design */
+    background-color: #4CAF50; /* This sets the background color of the button to green */
+    border: none; /* This defines the border of the button */
+    color: white; /* This sets the color of the text */
+    padding: 15px 64px; /* This defines the area around my text for the button. This determines H x W on the button */
+    border-radius: 60px; /* This sets the border to be rounded. The higher the pixels, the more curved the corners become */
+    text-decoration: none; /* This removes the underline from the text */
+    font-size: 16px; /* This sets the font size */
+    cursor: pointer; /* This sets the cursor to a pointer */
+    margin-top: 20px; /* This sets the margin of the button*/
+    box-shadow: 0 8px #999; /* This creates a shadow behind our button */
+}
+
+#validationForm input[class="Submit-button"]:hover { /* This overwrites #validationForm for the specific input classified as "Submit-button" so that it can have it acquires the hover attribute */
+    background-color: #45a049; /* This sets the background color of the button to a darker green when hovered over */
+}
+
+#validationForm input[class="Submit-button"]:active { /* This overwrites #validationForm for the specific input classified as "Submit-button" so that it can have it acquires the active attribute */
+    background-color: #45a049; /* This sets the background color of the button to a darker green when clicked */
+    box-shadow: 0 5px #666; /* This creates a shadow behind our button when clicked */
+    transform: translateY(4px); /* This moves the button down 4 pixels when clicked creating the press down effect */
+}
+
+.Objectives {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#objlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .sidenav {

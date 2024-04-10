@@ -21,13 +21,13 @@ function playGame() { // This function is called when the user clicks the button
     }
 
     if(userChoice === computerChoice) { // This checks if the user and computer responses are the same. If they're the same then the It's a tie! alert is displayed.
-        alert("It's a tie!");
+        alert(`It is a tie! The computer also chose ${computerChoice}`);
     } else if( // This checks if the user has a winning combination.
         (userChoice === 'rock' && computerChoice === 'scissors') || (userChoice === 'scissors' && computerChoice === 'paper') || (userChoice === 'paper' && computerChoice === 'rock') // || is used for OR
     ) {
-        alert(`You win! ${userChoice} beats ${computerChoice}.`); // If the user wins then the alert displays the winning message.
+        alert(`You win! The computer chose ${computerChoice}.`); // If the user wins then the alert displays the winning message.
     } else {
-        alert(`You lose! ${computerChoice} beats ${userChoice}.`); // If the user loses then the alert displays the losing message.
+        alert(`You lose! The computer chose ${computerChoice} `); // If the user loses then the alert displays the losing message.
     }
 }
 
